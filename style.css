@@ -4,7 +4,7 @@
 #1B0C21
 #631A55
 #E30B33
-#F4C0DD
+rgb(244,192,221)
 #BA31C8
 
 */
@@ -17,22 +17,26 @@
   background-color: rgba(99, 26, 85, 0.7);
   top: 0;
   left: 0;
-  font-family: Pacifico;
+
   font-size: 24px;
   border-radius: 0px 0px 30px 0px;
-  width: 300px;
+
   line-height: 2;
-  vertical-align: middle;
+
+  max-width: 100%;
+
 }
 .contentbox {
-width: 800px;
+width: 75%;
 margin:20px auto;
-background-color: #f4c0dd;
+background-color: rgb(244,192,221,0.75);
 color: #24174;
 padding: 30px 30px;
 text-align: justify;
 overflow: hidden;
 border-radius: 0px 30px;
+
+
 }
 
 body {
@@ -48,6 +52,7 @@ body {
   color: white;
   padding: 0 20px;
   font-family: Permanent Marker;
+
 }
 .menu a:hover{
   color:#BA31C8;
