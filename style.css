@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+/* Palette of colours
+#1B0C21
+#631A55
+#E30B33
+#F4C0DD
+#BA31C8
+
+*/
+
+.menu{
+  position: fixed;
+  text-align: center;
+  z-index: 10;
+  margin: 0;
+  background-color: rgba(99, 26, 85, 0.7);
+  top: 0;
+  left: 0;
+  font-family: Pacifico;
+  font-size: 24px;
+  border-radius: 0px 0px 30px 0px;
+  width: 300px;
+  line-height: 2;
+  vertical-align: middle;
+}
+.contentbox {
+width: 800px;
+margin:20px auto;
+background-color: #f4c0dd;
+color: #24174;
+padding: 30px 30px;
+text-align: justify;
+overflow: hidden;
+border-radius: 0px 30px;
+}
+
+body {
+  background-image: url("assets/background.png");
+  background-attachment: fixed;
+  color: #2d2327;
+  background-size: auto 100%;
+  margin-top: 50px;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+  padding: 0 20px;
+  font-family: Permanent Marker;
+}
+.menu a:hover{
+  color:#BA31C8;
+}
+
+
+h1, h2, h3, h4{
+  font-family: Permanent Marker;
+}
+
+*{
+  font-family: 'Fjalla One', sans-serif;
+}
