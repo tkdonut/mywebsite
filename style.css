@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 /* Palette of colours
 #1B0C21
 #631A55
@@ -15,6 +15,7 @@ rgb(244,192,221)
   z-index: 10;
   margin: 0;
   background-color: rgba(99, 26, 85, 0.7);
+
   top: 0;
   left: 0;
 
@@ -32,7 +33,7 @@ margin:20px auto;
 background-color: rgb(244,192,221,0.75);
 color: #24174;
 padding: 30px 30px;
-text-align: justify;
+text-align: justify;ja
 overflow: hidden;
 border-radius: 0px 30px;
 
@@ -45,17 +46,27 @@ body {
   color: #2d2327;
   background-size: auto 100%;
   margin-top: 70px;
+  background-position: center;
 }
+
+/*
+Menu link selector contains parameters to allow a fading change on links. Redundancy for compatibility
+*/
 
 .menu a{
   text-decoration: none;
-  color: white;
+  color: rgb(244,192,221);
   padding: 0 20px;
-  font-family: Permanent Marker;
+  font-family: 'Libre Barcode 39 Text', cursive;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  font-size: 40px;
 
 }
 .menu a:hover{
-  color:#BA31C8;
+  color:#E30B33;
 }
 
 
@@ -65,4 +76,14 @@ h1, h2, h3, h4{
 
 *{
   font-family: 'Fjalla One', sans-serif;
+}
+
+a {
+
+}
+
+#sun {
+width: 50px;
+padding: 15px;
+float: left;
 }
