@@ -12,13 +12,15 @@ rgb(244,192,221)
 .menu{
   position: fixed;
   text-align: center;
-  z-index: 10;
-  margin: 0;
+  margin: auto auto;
   top: 0;
   left: 0;
   font-size: 24px;
   line-height: 2;
-  max-width: 100%;
+  width: 100%;
+  background-color: black;
+    overflow: hidden;
+
 
 }
 .contentbox {
@@ -36,9 +38,9 @@ body {
   background-attachment: fixed;
   color: #2d2327;
   background-size: auto 100%;
-  margin-top: 70px;
+  margin-top: 100px;
   background-position: center;
-  overflow:hidden;
+
 }
 
 /*
@@ -48,22 +50,29 @@ Menu link selector contains parameters to allow a fading change on links. Redund
 .menu a{
   text-decoration: none;
   color: rgb(244,192,221);
-  padding: 0 20px;
+  padding: 0 10px;
   font-family: 'Libre Barcode 39 Text', cursive;
   -o-transition:.5s;
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  font-size: 40px;
+  font-size: 40px ;
   text-shadow: 2px 2px black;
+  z-index: 100;
+  position: relative;
+
+
 
 }
 .menu a:hover{
   color:#E30B33;
 }
 
-
-
-*{
-  font-family: 'Fjalla One', sans-serif;
+.lines img {
+  float: none;
+  position: absolute;
+  left: 0px;
+  opacity: 0.2;
+  z-index: 5;
+  width: 100%;
 }
