@@ -18,8 +18,10 @@ rgb(244,192,221)
   line-height: 2;
   width: 100%;
   background-color: black;
-    overflow: hidden;
-
+  overflow: hidden;
+  border-bottom: solid;
+  border-color: #631A55;
+  border-width: 2px;
 
 }
 .contentbox {
@@ -30,6 +32,7 @@ color: #24174;
 padding: 30px 30px;
 border-radius: 0px 30px;
 overflow: visible;
+
 }
 
 body {
@@ -37,7 +40,7 @@ body {
   background-attachment: fixed;
   color: #2d2327;
   background-size: auto 100%;
-  margin-top: 100px;
+  margin-top: 130px;
   background-position: center;
 
 }
@@ -55,7 +58,7 @@ Menu link selector contains parameters to allow a fading change on links. Redund
   -ms-transition:.5s;
   -moz-transition:.5s;
   -webkit-transition:.5s;
-  font-size: 40px ;
+  font-size: 45px ;
   text-shadow: 2px 2px black;
   z-index: 100;
   position: relative;
