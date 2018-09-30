@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
+
 /* Palette of colours
 #1B0C21
 #631A55
@@ -80,5 +82,5 @@ Menu link selector contains parameters to allow a fading change on links. Redund
 }
 
 *{
-  font-family:'Fjalla One', sans-serif;
+font-family: 'Exo 2', sans-serif;
 }
