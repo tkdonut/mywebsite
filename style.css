@@ -14,16 +14,10 @@ rgb(244,192,221)
   text-align: center;
   z-index: 10;
   margin: 0;
-
-
   top: 0;
   left: 0;
-
   font-size: 24px;
-
-
   line-height: 2;
-  text-shadow: 2px 2px black;
   max-width: 100%;
 
 }
@@ -33,11 +27,8 @@ margin:20px auto;
 background-color: rgb(244,192,221,0.75);
 color: #24174;
 padding: 30px 30px;
-text-align: justify;ja
-overflow: hidden;
 border-radius: 0px 30px;
-
-
+overflow: visible;
 }
 
 body {
@@ -47,6 +38,7 @@ body {
   background-size: auto 100%;
   margin-top: 70px;
   background-position: center;
+  overflow:hidden;
 }
 
 /*
@@ -63,6 +55,7 @@ Menu link selector contains parameters to allow a fading change on links. Redund
   -moz-transition:.5s;
   -webkit-transition:.5s;
   font-size: 40px;
+  text-shadow: 2px 2px black;
 
 }
 .menu a:hover{
@@ -70,14 +63,7 @@ Menu link selector contains parameters to allow a fading change on links. Redund
 }
 
 
-h1, h2, h3, h4{
-  font-family: Permanent Marker;
-}
 
 *{
   font-family: 'Fjalla One', sans-serif;
-}
-
-a {
-
 }
