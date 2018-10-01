@@ -25,7 +25,7 @@ Make the logo dissapear if resolution is too low
 #logo {
   position: fixed;
   top: 20px;
-  left: 60px;
+  left: 50px;
   width: 400px;
 }
 
@@ -70,26 +70,20 @@ body {
 
 }
 
-/*
-Menu link selector contains parameters to allow a fading change on links. Redundancy for compatibility
-*/
-.menu a {
-  text-decoration: none;
-  color: rgb(244, 192, 221);
-  padding: 0 50px;
-  font-family: 'Libre Barcode 39 Text', cursive;
-  -o-transition: .5s;
-  -ms-transition: .5s;
-  -moz-transition: .5s;
-  -webkit-transition: .5s;
-  font-size: 45px;
-  text-shadow: 2px 2px black;
-  z-index: 100;
+a.button{
+  background: url("assets/aboutmesprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  height: 80px;
+  width: 600px;
+  float: right;
+  z-index: 1000;
   position: relative;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
 }
-
-.menu a:hover {
-  color: #E30B33;
+a.button:hover {
+  background-position: 0 -87px;
 }
 
 
