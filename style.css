@@ -1,3 +1,7 @@
+/*
+Import some google fonts for prettyness
+*/
+
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 
@@ -7,29 +11,51 @@
 #E30B33
 rgb(244,192,221)
 #BA31C8
-
 */
-
-@media only screen and (max-width: 1026px) {
-    #logo {
-        display: none;
-    }
-}
-
-#logo  {
-  position:fixed;
-  top: 10px;
-  left: 10px;
-  width: 25%;
-}
 
 /*
 Make the logo dissapear if resolution is too low
 */
+@media only screen and (max-width: 900px) {
+  #logo {
+    display: none;
+  }
+}
 
-.menu{
+#logo {
   position: fixed;
-  text-align: center;
+  top: 20px;
+  left: 60px;
+  width: 400px;
+}
+
+* {
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background-image: url("assets/background.png");
+  background-attachment: fixed;
+  color: #2d2327;
+  background-size: auto 100%;
+  margin-top: 130px;
+  background-position: center;
+}
+
+.contentbox {
+  width: 75%;
+  margin: 20px auto;
+  background-color: rgb(244, 192, 221, 0.75);
+  color: #24174;
+  padding: 30px 30px;
+  border-radius: 0px 30px;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.menu {
+  position: fixed;
+  text-align: right;
   margin: auto auto;
   top: 0;
   left: 0;
@@ -43,53 +69,30 @@ Make the logo dissapear if resolution is too low
   border-width: 2px;
 
 }
-.contentbox {
-width: 75%;
-margin:20px auto;
-background-color: rgb(244,192,221,0.75);
-color: #24174;
-padding: 30px 30px;
-border-radius: 0px 30px;
-overflow: hidden;
-text-align: justify;
-
-}
-
-body {
-  background-image: url("assets/background.png");
-  background-attachment: fixed;
-  color: #2d2327;
-  background-size: auto 100%;
-  margin-top: 130px;
-  background-position: center;
-
-
-}
 
 /*
 Menu link selector contains parameters to allow a fading change on links. Redundancy for compatibility
 */
-
-.menu a{
+.menu a {
   text-decoration: none;
-  color: rgb(244,192,221);
-  padding: 0 10px;
+  color: rgb(244, 192, 221);
+  padding: 0 50px;
   font-family: 'Libre Barcode 39 Text', cursive;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  font-size: 45px ;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  -moz-transition: .5s;
+  -webkit-transition: .5s;
+  font-size: 45px;
   text-shadow: 2px 2px black;
   z-index: 100;
   position: relative;
-
-
-
 }
-.menu a:hover{
-  color:#E30B33;
+
+.menu a:hover {
+  color: #E30B33;
 }
+
+
 
 .lines img {
   float: none;
@@ -98,8 +101,4 @@ Menu link selector contains parameters to allow a fading change on links. Redund
   opacity: 0.2;
   z-index: 5;
   width: 100%;
-}
-
-*{
-font-family: 'Exo 2', sans-serif;
 }
