@@ -45,7 +45,7 @@ body {
 .contentbox {
   width: 75%;
   margin: 20px auto;
-  background-color: rgb(244, 192, 221, 0.75);
+  background-color: rgba(244, 192, 221, 0.75);
   color: #24174;
   padding: 30px 30px;
   border-radius: 0px 30px;
