@@ -1,16 +1,64 @@
+/*
+Import some google fonts for prettyness
+*/
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Exo+2');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
+
 /* Palette of colours
 #1B0C21
 #631A55
 #E30B33
 rgb(244,192,221)
 #BA31C8
-
 */
 
-.menu{
+/*
+Make the logo dissapear if resolution is too low
+*/
+@media only screen and (max-width: 900px) {
+  #logo {
+    display: none;
+  }
+}
+
+
+#logo {
   position: fixed;
-  text-align: center;
+  top: 20px;
+  left: 50px;
+  width: 400px;
+}
+
+body {
+  background-image: url("assets/background.png");
+  background-attachment: fixed;
+  background-size: auto 100%;
+  margin-top: 130px;
+  background-color: black;
+  background-position: center;
+}
+
+.contentbox {
+  width: 75%;
+  margin: 20px auto;
+  background-color: rgba(244, 192, 221, 0.75);
+  color: #24174;
+  padding: 30px 30px;
+  border-radius: 0px 30px;
+  overflow: hidden;
+  text-align: justify;
+  min-width: 420px;
+    font-family: 'Exo 2', sans-serif;
+
+}
+
+.menu {
+
+  position: fixed;
+  text-align: right;
   margin: auto auto;
   top: 0;
   left: 0;
@@ -18,64 +66,23 @@ rgb(244,192,221)
   line-height: 2;
   width: 100%;
   background-color: black;
-    overflow: hidden;
-
-
-}
-.contentbox {
-width: 75%;
-margin:20px auto;
-background-color: rgb(244,192,221,0.75);
-color: #24174;
-padding: 30px 30px;
-border-radius: 0px 30px;
-overflow: visible;
+  overflow: hidden;
+  border-bottom: solid;
+  border-color: #631A55;
+  border-width: 2px;
 }
 
-body {
-  background-image: url("assets/background.png");
-  background-attachment: fixed;
-  color: #2d2327;
-  background-size: auto 100%;
-  margin-top: 100px;
-  background-position: center;
-
+a.menulink {
+  font-family: "Libre Barcode 39 Text", cursive;
+  font-size: 40px;
+  padding-right: 30px;
+  color: white;
 }
 
-/*
-Menu link selector contains parameters to allow a fading change on links. Redundancy for compatibility
-*/
-
-.menu a{
-  text-decoration: none;
-  color: rgb(244,192,221);
-  padding: 0 10px;
-  font-family: 'Libre Barcode 39 Text', cursive;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  font-size: 40px ;
-  text-shadow: 2px 2px black;
-  z-index: 100;
-  position: relative;
-
-
-
-}
-.menu a:hover{
-  color:#E30B33;
+a.menulink:hover{
+  color: #E30B33;
 }
 
-.lines img {
-  float: none;
-  position: absolute;
-  left: 0px;
-  opacity: 0.2;
-  z-index: 5;
-  width: 100%;
-}
-
-*{
-  font-family:'Fjalla One', sans-serif;
+td {
+  padding-bottom: 1em;
 }
