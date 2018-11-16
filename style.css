@@ -50,6 +50,7 @@ body {
   border-radius: 0px 30px;
   overflow: hidden;
   text-align: justify;
+  min-width: 420px;
     font-family: 'Exo 2', sans-serif;
 
 }
