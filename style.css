@@ -7,7 +7,6 @@ Import some google fonts for prettyness
 @import url('https://fonts.googleapis.com/css?family=Exo+2');
 @import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text');
 
-
 /* Palette of colours
 #1B0C21
 #631A55
@@ -25,6 +24,7 @@ Make the logo dissapear if resolution is too low
   }
 }
 
+
 #logo {
   position: fixed;
   top: 20px;
@@ -35,9 +35,9 @@ Make the logo dissapear if resolution is too low
 body {
   background-image: url("assets/background.png");
   background-attachment: fixed;
-  color: #2d2327;
   background-size: auto 100%;
   margin-top: 130px;
+  background-color: black;
   background-position: center;
 }
 
@@ -71,9 +71,17 @@ body {
   border-width: 2px;
 }
 
-a {
+a.menulink {
   font-family: "Libre Barcode 39 Text", cursive;
   font-size: 40px;
   padding-right: 30px;
   color: white;
+}
+
+a.menulink:hover{
+  color: #E30B33;
+}
+
+td {
+  padding-bottom: 1em;
 }
